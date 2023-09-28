@@ -426,7 +426,7 @@
           </p>
         </div>
         <div class="footer-social-media">
-          <p class="footer-social-text">Social media</p>
+          <p class="footer-subtitle">Social media</p>
           <ul class="icon-list">
             <li class="icon-item">
               <a href="" class="blue-circle">
@@ -458,7 +458,56 @@
             </li>
           </ul>
         </div>
+        <form class="form-subscribe" name="subscribe-form">
+          <label class="label-subscribe footer-subtitle" for="subscribe">
+            Subscribe
+          </label>
+          <div class="form-subscribe-down">
+            <input
+              class="input-subscribe"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              id="subscribe"
+            />
+            <button class="btn-subscribe" type="submit">
+              Subscribe
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <div class="modal-bg">
+      <div class="modal-window">
+        <form class="modal-form" name="callback-form">
+          <button class="btn-close">x</button>
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-label"
+            >Name
+            <input class="modal-input" type="text" name="username" />
+          </label>
+          <label class="modal-label"
+            >Phone
+            <input class="modal-input" type="tel" name="phone" />
+          </label>
+          <label class="modal-label"
+            >Email
+            <input class="modal-input" type="email" name="username" />
+          </label>
+          <label class="modal-label">
+            <textarea
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

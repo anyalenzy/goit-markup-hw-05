@@ -20,6 +20,14 @@ h6 {
 img {
   display: block;
 }
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+input {
+  font-family: inherit;
+  color: currentColor;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -347,7 +355,10 @@ body {
 .footer p {
   max-width: 264px;
 }
-.footer-social-text {
+.footer-social-media {
+  margin-right: 80px;
+}
+.footer-subtitle {
   color: #ffffff;
   font-weight: 500;
   line-height: 1.5;
@@ -360,4 +371,58 @@ body {
 .footer-social-media .icon-list .blue-circle:hover,
 .footer-social-media .icon-list .blue-circle:focus {
   background-color: #31d0aa;
+}
+.form-subscribe {
+}
+.label-subscribe {
+  display: block;
+}
+.form-subscribe-down {
+  display: flex;
+  gap: 24px;
+}
+.input-subscribe {
+  display: inline-block;
+  background: var(--NAVY-BLUE, #2e2f42);
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  flex-basis: 264px;
+  flex-shrink: 0;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.input-subscribe::placeholder {
+  color: var(--WHITE, #fff);
+  font-size: 12px;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.btn-subscribe {
+  display: inline-flex;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: #404bbf;
+}
+.icon-subscribe {
+  fill: #fff;
 }
