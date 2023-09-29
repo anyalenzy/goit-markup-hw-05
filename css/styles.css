@@ -373,13 +373,11 @@ body {
   background-color: #31d0aa;
 }
 .form-subscribe {
-}
-.label-subscribe {
-  display: block;
-}
-.form-subscribe-down {
   display: flex;
   gap: 24px;
+}
+.label-subscribe {
+  flex-shrink: 0;
 }
 .input-subscribe {
   display: inline-block;
@@ -387,8 +385,7 @@ body {
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  flex-basis: 264px;
-  flex-shrink: 0;
+  min-width: 264px;
   height: 40px;
   padding: 8px 16px;
 }
