@@ -460,6 +460,7 @@ body {
 .modal-backdrop.is-open {
   visibility: visible;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .btn-close {
